@@ -1,0 +1,20 @@
+{
+	"weapons": [
+		{
+			"name": "flame",
+			"speed": 800,
+			"rotation": 0,
+			"lifetime": 1,
+			"damage": 10,
+			"rarity": "Common",
+		},
+		{
+			"name": "sword",
+			"speed": 400,
+			"rotation": 0.3,
+			"lifetime": 0.5,
+			"damage": 10,
+			"rarity": "uncommon"
+		},
+	]
+}

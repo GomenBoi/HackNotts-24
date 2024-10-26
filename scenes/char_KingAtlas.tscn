@@ -1,41 +1,41 @@
 [gd_scene load_steps=13 format=3 uid="uid://drjf5u1gj5npo"]
 
-[ext_resource type="Texture2D" uid="uid://cvc70kdseqlkq" path="res://assets/Characters/characters.png" id="1_nedcb"]
+[ext_resource type="Texture2D" uid="uid://cvc70kdseqlkq" path="res://assets/Characters/characters.png" id="1_47qim"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xknl8"]
-atlas = ExtResource("1_nedcb")
+atlas = ExtResource("1_47qim")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_p38k5"]
-atlas = ExtResource("1_nedcb")
+atlas = ExtResource("1_47qim")
 region = Rect2(128, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0u38m"]
-atlas = ExtResource("1_nedcb")
+atlas = ExtResource("1_47qim")
 region = Rect2(160, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nkfaf"]
-atlas = ExtResource("1_nedcb")
+atlas = ExtResource("1_47qim")
 region = Rect2(192, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pjn4x"]
-atlas = ExtResource("1_nedcb")
+atlas = ExtResource("1_47qim")
 region = Rect2(224, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sj37m"]
-atlas = ExtResource("1_nedcb")
+atlas = ExtResource("1_47qim")
 region = Rect2(0, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y8aa7"]
-atlas = ExtResource("1_nedcb")
+atlas = ExtResource("1_47qim")
 region = Rect2(32, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tm1j6"]
-atlas = ExtResource("1_nedcb")
+atlas = ExtResource("1_47qim")
 region = Rect2(64, 32, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2kljy"]
-atlas = ExtResource("1_nedcb")
+atlas = ExtResource("1_47qim")
 region = Rect2(96, 32, 32, 32)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_427i7"]

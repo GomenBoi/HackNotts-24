@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=3 uid="uid://dox5hod33xbkf"]
+
+[ext_resource type="Script" path="res://scripts/sword_attack.gd" id="1_c2dxb"]
+[ext_resource type="Texture2D" uid="uid://dli2r2a6colee" path="res://assets/Weapons/pixil-frame-0.png" id="2_qviww"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ejje3"]
+size = Vector2(17, 17)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_c2dxb")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+position = Vector2(2.5, -0.5)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_qviww")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(3, 0)
+shape = SubResource("RectangleShape2D_ejje3")
+
+[node name="LifeTime" type="Timer" parent="CharacterBody2D"]
+wait_time = 1.5
+autostart = true
+
+[connection signal="timeout" from="CharacterBody2D/LifeTime" to="CharacterBody2D" method="_on_life_time_timeout"]
