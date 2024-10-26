@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name flame_projectile
 
 @export var SPEED = 800
 

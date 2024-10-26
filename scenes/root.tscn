@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dceb5l101mlw5" path="res://assets/platformertiles.png" id="1_rtb2k"]
 [ext_resource type="PackedScene" uid="uid://h2sie1cnxydc" path="res://scenes/character.tscn" id="2_hkfe8"]
-[ext_resource type="PackedScene" path="res://scenes/enemy_fire.tscn" id="3_dl3b5"]
+[ext_resource type="PackedScene" uid="uid://7n0c44yu1rjb" path="res://scenes/enemy_fire.tscn" id="3_dl3b5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_47ch6"]
 texture = ExtResource("1_rtb2k")
