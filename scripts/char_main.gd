@@ -104,7 +104,6 @@ func shoot():
 	main.call_deferred("add_child", instance)
 	onAttackCD = true
 	$AttackCD.start()
-	print("ADded child")
 
 func _on_attack_cd_timeout() -> void:
 	onAttackCD = false
