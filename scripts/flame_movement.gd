@@ -21,6 +21,6 @@ func _on_area_2d_body_entered(body):
 	# Hit handler function here
 	queue_free()
 	
-func _on_life_timeout():
-	print("Projectile life ended")
+
+func _on_life_time_timeout() -> void:
 	queue_free()

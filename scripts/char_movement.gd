@@ -19,6 +19,10 @@ var current_jumps = 2
 @export var tfliph = false
 
 var jumping = false
+var onCD = false
+
+@onready var main = get_tree().get_root().get_child(0)
+@onready var projectile = preload("res://scenes/flame.tscn")
 
 func _physics_process(delta: float):
 	var left = Input.get_action_strength("Move_Left")
@@ -34,6 +38,9 @@ func _physics_process(delta: float):
 	var has_jumped = false
 	if Input.is_action_just_pressed("Jump"):
 		has_jumped = jump()
+		
+	if Input.is_action_just_pressed("Attack") && !onCD:
+		shoot()
 	
 	if sprint == 1:
 		speed = SPRINT_SPEED
@@ -82,3 +89,13 @@ func jump() -> bool:
 		else:
 			current_jumps = TOTAL_JUMPS	
 	return true
+
+func shoot():
+	var instance = projectile.instantiate()
+	var charBody = instance.get_node("CharacterBody2D")
+	charBody.direction = rotation
+	charBody.spawnPos = global_position
+	charBody.spawnRot = rotation
+	charBody.zdex = z_index - 1
+	main.call_deferred("add_child", instance)
+	print("ADded child")

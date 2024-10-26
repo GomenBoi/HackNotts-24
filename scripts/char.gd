@@ -15,7 +15,7 @@ func _physics_process(delta: float):
 	var x_direction = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	var x_velocity = x_direction * SPEED
 	
-	velocity.y += get_gravity() * delta
+	velocity.y += get_gravity2() * delta
 	
 	if Input.is_action_just_pressed("jump"):
 		velocity.y = jump_velocity
@@ -25,5 +25,5 @@ func _physics_process(delta: float):
 	
 	move_and_slide()
 	
-func get_gravity() -> float:
+func get_gravity2() -> float:
 	return jump_gravity if velocity.y < 0.0 else fall_gravity
