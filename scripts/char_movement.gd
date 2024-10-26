@@ -19,7 +19,7 @@ var current_jumps = 2
 @export var tfliph = false
 
 var jumping = false
-var onCD = false
+var onAttackCD = false
 
 @onready var main = get_tree().get_root().get_child(0)
 @onready var projectile = preload("res://scenes/flame.tscn")
@@ -39,7 +39,7 @@ func _physics_process(delta: float):
 	if Input.is_action_just_pressed("Jump"):
 		has_jumped = jump()
 		
-	if Input.is_action_just_pressed("Attack") && !onCD:
+	if Input.is_action_just_pressed("Attack") && !onAttackCD:
 		shoot()
 	
 	if sprint == 1:
@@ -57,8 +57,10 @@ func _physics_process(delta: float):
 			$AnimatedSprite2D.play("idle")
 	else:
 		if x_direction > 0:
+			tfliph = false
 			$AnimatedSprite2D.flip_h = false
 		else:
+			tfliph = true
 			$AnimatedSprite2D.flip_h = true
 		
 		if jumping:
@@ -97,5 +99,11 @@ func shoot():
 	charBody.spawnPos = global_position
 	charBody.spawnRot = rotation
 	charBody.zdex = z_index - 1
+	charBody.fliph = tfliph
 	main.call_deferred("add_child", instance)
+	onAttackCD = true
+	$AttackCD.start()
 	print("ADded child")
+
+func _on_attack_cd_timeout() -> void:
+	onAttackCD = false
