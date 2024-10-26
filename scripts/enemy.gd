@@ -1,9 +1,7 @@
-extends CharacterBody2D
+extends StaticBody2D
 
-@export var SPEED : int
-
-func create_path() -> void:
-	pass
+func _ready() -> void:
+	$AnimatedSprite2D.play("idle")
 	
 func _physics_process(delta: float) -> void:
 	pass

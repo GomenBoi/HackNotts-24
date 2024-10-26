@@ -1,0 +1,154 @@
+[gd_scene load_steps=36 format=3 uid="uid://7n0c44yu1rjb"]
+
+[ext_resource type="Texture2D" uid="uid://6x71n54qgui8" path="res://assets/magic-flame-effect/0009.png" id="1_8a5wg"]
+[ext_resource type="Script" path="res://scripts/enemy.gd" id="1_78kwj"]
+[ext_resource type="Texture2D" uid="uid://bbvmy0xui153i" path="res://assets/magic-flame-effect/0010.png" id="2_l5djs"]
+[ext_resource type="Texture2D" uid="uid://c64lyv5hkfmi4" path="res://assets/magic-flame-effect/0011.png" id="3_7sq4y"]
+[ext_resource type="Texture2D" uid="uid://5r3ku7ixbjtf" path="res://assets/magic-flame-effect/0012.png" id="4_txoxr"]
+[ext_resource type="Texture2D" uid="uid://b1l0bdyr86mvo" path="res://assets/magic-flame-effect/0013.png" id="5_jqnlu"]
+[ext_resource type="Texture2D" uid="uid://cei712csexlg1" path="res://assets/magic-flame-effect/0014.png" id="6_6geqb"]
+[ext_resource type="Texture2D" uid="uid://7uriooogfoig" path="res://assets/magic-flame-effect/0015.png" id="7_x2je1"]
+[ext_resource type="Texture2D" uid="uid://7sui23e740qf" path="res://assets/magic-flame-effect/0016.png" id="8_8fk4d"]
+[ext_resource type="Texture2D" uid="uid://dvm52hu6hx8yo" path="res://assets/magic-flame-effect/0017.png" id="9_bt0xo"]
+[ext_resource type="Texture2D" uid="uid://dnramxxc2d4ni" path="res://assets/magic-flame-effect/0018.png" id="10_g36lv"]
+[ext_resource type="Texture2D" uid="uid://buo3iyqc06xvg" path="res://assets/magic-flame-effect/0019.png" id="11_ttmxh"]
+[ext_resource type="Texture2D" uid="uid://brhoyfvfi4y8l" path="res://assets/magic-flame-effect/0020.png" id="12_e5j3a"]
+[ext_resource type="Texture2D" uid="uid://ssejkalsooeh" path="res://assets/magic-flame-effect/0021.png" id="13_qhy0h"]
+[ext_resource type="Texture2D" uid="uid://bf6vshp3duvd3" path="res://assets/magic-flame-effect/0022.png" id="14_ueksg"]
+[ext_resource type="Texture2D" uid="uid://pa0x8lv22y2v" path="res://assets/magic-flame-effect/0023.png" id="15_r3yvk"]
+[ext_resource type="Texture2D" uid="uid://dikxnmjyqueed" path="res://assets/magic-flame-effect/0024.png" id="16_2hpjh"]
+[ext_resource type="Texture2D" uid="uid://30go2q2ja186" path="res://assets/magic-flame-effect/0025.png" id="17_tx0uk"]
+[ext_resource type="Texture2D" uid="uid://l604lcmuedpg" path="res://assets/magic-flame-effect/0026.png" id="18_7m5yk"]
+[ext_resource type="Texture2D" uid="uid://dsjxjscys6r6b" path="res://assets/magic-flame-effect/0027.png" id="19_yotgm"]
+[ext_resource type="Texture2D" uid="uid://daxby4n6v2bih" path="res://assets/magic-flame-effect/0028.png" id="20_54jf6"]
+[ext_resource type="Texture2D" uid="uid://7toj5flsmgyl" path="res://assets/magic-flame-effect/0029.png" id="21_ryth3"]
+[ext_resource type="Texture2D" uid="uid://doac0s0bxqkpt" path="res://assets/magic-flame-effect/0030.png" id="22_fgwrh"]
+[ext_resource type="Texture2D" uid="uid://g4bln5nsgq0f" path="res://assets/magic-flame-effect/0031.png" id="23_2rvbw"]
+[ext_resource type="Texture2D" uid="uid://dfucgy1pnfv68" path="res://assets/magic-flame-effect/0032.png" id="24_cwbrc"]
+[ext_resource type="Texture2D" uid="uid://h5fnwk060svr" path="res://assets/magic-flame-effect/0033.png" id="25_gfcgc"]
+[ext_resource type="Texture2D" uid="uid://bjpvpfmsm0pfx" path="res://assets/magic-flame-effect/0034.png" id="26_suqll"]
+[ext_resource type="Texture2D" uid="uid://bwf0fvifkrugr" path="res://assets/magic-flame-effect/0035.png" id="27_ojr6v"]
+[ext_resource type="Texture2D" uid="uid://dxi0cbkok1k4n" path="res://assets/magic-flame-effect/0036.png" id="28_c1mhs"]
+[ext_resource type="Texture2D" uid="uid://dwqjol0lljneg" path="res://assets/magic-flame-effect/0037.png" id="29_kbqnj"]
+[ext_resource type="Texture2D" uid="uid://cvvbxtpqpelk3" path="res://assets/magic-flame-effect/0038.png" id="30_lluyn"]
+[ext_resource type="Texture2D" uid="uid://dxpisliy1h52h" path="res://assets/magic-flame-effect/0039.png" id="31_12vgg"]
+[ext_resource type="Texture2D" uid="uid://cwure4xedggtj" path="res://assets/magic-flame-effect/0040.png" id="32_ihsr3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pkovo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_8a5wg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_l5djs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_7sq4y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_txoxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_jqnlu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6geqb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_x2je1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_8fk4d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_bt0xo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_g36lv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ttmxh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_e5j3a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qhy0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ueksg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_r3yvk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_2hpjh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_tx0uk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7m5yk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_yotgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_54jf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_ryth3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_fgwrh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_2rvbw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_cwbrc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_gfcgc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_suqll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_ojr6v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_c1mhs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_kbqnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_lluyn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_12vgg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ihsr3")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 60.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_afvhl"]
+size = Vector2(144, 256)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+scale = Vector2(0.25, 0.25)
+script = ExtResource("1_78kwj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_pkovo")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_afvhl")
