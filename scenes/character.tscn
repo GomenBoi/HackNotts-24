@@ -1,24 +1,44 @@
-[gd_scene load_steps=27 format=3 uid="uid://euud3x181ga7"]
+[gd_scene load_steps=43 format=3 uid="uid://euud3x181ga7"]
 
 [ext_resource type="Script" path="res://scenes/character_body_2d.gd" id="1_3smnr"]
+[ext_resource type="Texture2D" uid="uid://bhkkiqa4pygm" path="res://assets/Characters/Jack O' Lantern/Idle (1).png" id="1_6gdun"]
 [ext_resource type="Texture2D" uid="uid://dp2oxss0wf2l8" path="res://assets/Characters/Jack O' Lantern/Run (1).png" id="2_gg4kk"]
 [ext_resource type="Texture2D" uid="uid://b5wfln3j06eet" path="res://assets/Characters/Jack O' Lantern/Run (2).png" id="3_4pig5"]
+[ext_resource type="Texture2D" uid="uid://cl2vcluk6fedi" path="res://assets/Characters/Jack O' Lantern/Idle (2).png" id="3_6xa62"]
+[ext_resource type="Texture2D" uid="uid://vp6gcwv4yiql" path="res://assets/Characters/Jack O' Lantern/Idle (3).png" id="4_jk6if"]
 [ext_resource type="Texture2D" uid="uid://bjby4pyl6r3cp" path="res://assets/Characters/Jack O' Lantern/Run (3).png" id="4_viv50"]
+[ext_resource type="Texture2D" uid="uid://sqtqd6jy0vbp" path="res://assets/Characters/Jack O' Lantern/Idle (4).png" id="5_68odh"]
 [ext_resource type="Texture2D" uid="uid://nadlb86wjv47" path="res://assets/Characters/Jack O' Lantern/Run (4).png" id="5_k75xr"]
 [ext_resource type="Texture2D" uid="uid://bpa1nw48sytx8" path="res://assets/Characters/Jack O' Lantern/Run (5).png" id="6_i47sm"]
+[ext_resource type="Texture2D" uid="uid://cc8f0pif35dl4" path="res://assets/Characters/Jack O' Lantern/Idle (5).png" id="6_u4vb1"]
 [ext_resource type="Texture2D" uid="uid://duv5xoo588p7h" path="res://assets/Characters/Jack O' Lantern/Run (6).png" id="7_cm46s"]
+[ext_resource type="Texture2D" uid="uid://d0gu1pa86y5cg" path="res://assets/Characters/Jack O' Lantern/Idle (6).png" id="7_quuf2"]
+[ext_resource type="Texture2D" uid="uid://c6oykqfhvcb2e" path="res://assets/Characters/Jack O' Lantern/Idle (7).png" id="8_ksvav"]
 [ext_resource type="Texture2D" uid="uid://dr2fbcke01oo4" path="res://assets/Characters/Jack O' Lantern/Run (7).png" id="8_q57n4"]
+[ext_resource type="Texture2D" uid="uid://kjdoehkqymsm" path="res://assets/Characters/Jack O' Lantern/Idle (8).png" id="9_lvwt4"]
 [ext_resource type="Texture2D" uid="uid://cgif5xkub56dl" path="res://assets/Characters/Jack O' Lantern/Run (8).png" id="9_ogp4k"]
+[ext_resource type="Texture2D" uid="uid://cck1h4t3cwut3" path="res://assets/Characters/Jack O' Lantern/Idle (9).png" id="10_5lyln"]
 [ext_resource type="Texture2D" uid="uid://c5c2ok2dpyfql" path="res://assets/Characters/Jack O' Lantern/Walk (1).png" id="10_c8km3"]
+[ext_resource type="Texture2D" uid="uid://bkdql00ij2qk0" path="res://assets/Characters/Jack O' Lantern/Idle (10).png" id="11_antfj"]
 [ext_resource type="Texture2D" uid="uid://ck4e22c3pi6xs" path="res://assets/Characters/Jack O' Lantern/Walk (2).png" id="11_sgoy6"]
+[ext_resource type="Texture2D" uid="uid://c1dioklw3fqp3" path="res://assets/Characters/Jack O' Lantern/Jump (1).png" id="12_2imdp"]
 [ext_resource type="Texture2D" uid="uid://d24obgjna5k6a" path="res://assets/Characters/Jack O' Lantern/Walk (3).png" id="12_8pakv"]
+[ext_resource type="Texture2D" uid="uid://cuvluki57653m" path="res://assets/Characters/Jack O' Lantern/Jump (2).png" id="13_8uka4"]
 [ext_resource type="Texture2D" uid="uid://ce4x116urb5oe" path="res://assets/Characters/Jack O' Lantern/Walk (4).png" id="13_rqv52"]
 [ext_resource type="Texture2D" uid="uid://mcnwhnvh5g2g" path="res://assets/Characters/Jack O' Lantern/Walk (5).png" id="14_73utb"]
+[ext_resource type="Texture2D" uid="uid://bih3dj46iunls" path="res://assets/Characters/Jack O' Lantern/Jump (3).png" id="14_havjt"]
 [ext_resource type="Texture2D" uid="uid://bb5nh0oktomwf" path="res://assets/Characters/Jack O' Lantern/Walk (6).png" id="15_7dcrb"]
+[ext_resource type="Texture2D" uid="uid://djad0bocqb1xm" path="res://assets/Characters/Jack O' Lantern/Jump (4).png" id="15_xcbp3"]
 [ext_resource type="Texture2D" uid="uid://dojmitd27dw34" path="res://assets/Characters/Jack O' Lantern/Walk (7).png" id="16_0lm3t"]
+[ext_resource type="Texture2D" uid="uid://c1ojanpf47vrc" path="res://assets/Characters/Jack O' Lantern/Jump (5).png" id="16_j8q24"]
+[ext_resource type="Texture2D" uid="uid://ctd71ahgjbwur" path="res://assets/Characters/Jack O' Lantern/Jump (6).png" id="17_jfm6c"]
 [ext_resource type="Texture2D" uid="uid://du1mh2xurx42q" path="res://assets/Characters/Jack O' Lantern/Walk (8).png" id="17_rsyix"]
 [ext_resource type="Texture2D" uid="uid://dktj8oy2kcg0r" path="res://assets/Characters/Jack O' Lantern/Walk (9).png" id="18_bngkj"]
+[ext_resource type="Texture2D" uid="uid://cw5x3smdd306u" path="res://assets/Characters/Jack O' Lantern/Jump (7).png" id="18_feu20"]
+[ext_resource type="Texture2D" uid="uid://d113way16vk3a" path="res://assets/Characters/Jack O' Lantern/Jump (8).png" id="19_d70h4"]
 [ext_resource type="Texture2D" uid="uid://c4qk1d18rn52p" path="res://assets/Characters/Jack O' Lantern/Walk (10).png" id="19_ju8um"]
+[ext_resource type="Texture2D" uid="uid://h4jgt4debifp" path="res://assets/Characters/Jack O' Lantern/Jump (9).png" id="20_iyy2b"]
+[ext_resource type="Texture2D" uid="uid://knkl8vx7xy7w" path="res://assets/Characters/Jack O' Lantern/Jump (10).png" id="21_kf627"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wikbh"]
 radius = 263.0
@@ -27,100 +47,78 @@ height = 526.0
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1cuap"]
 size = Vector2(333, 478)
 
-[sub_resource type="Animation" id="Animation_ukc46"]
-resource_name = "JackO'Lantern_Walk"
-length = 0.3333
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"walk"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.1, 0.133333, 0.166667, 0.2, 0.233333, 0.266667, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-}
-
-[sub_resource type="Animation" id="Animation_5l76w"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"walk"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [0]
-}
-
-[sub_resource type="Animation" id="Animation_dve8f"]
-resource_name = "JackO'Lantern_Run"
-length = 0.2667
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:animation")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [&"run"]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("AnimatedSprite2D:frame")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.1, 0.133333, 0.166667, 0.2, 0.233333),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_r8ns1"]
-_data = {
-"JackO'Lantern_Run": SubResource("Animation_dve8f"),
-"JackO'Lantern_Walk": SubResource("Animation_ukc46"),
-"RESET": SubResource("Animation_5l76w")
-}
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_1pq1f"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_6gdun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_6xa62")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_jk6if")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_68odh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_u4vb1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_quuf2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ksvav")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_lvwt4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_5lyln")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_antfj")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("12_2imdp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8uka4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_havjt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xcbp3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_j8q24")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_jfm6c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_feu20")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_d70h4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_iyy2b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_kf627")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_gg4kk")
@@ -189,6 +187,7 @@ animations = [{
 [node name="Node2D" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+scale = Vector2(0.065, 0.065)
 script = ExtResource("1_3smnr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
@@ -201,14 +200,7 @@ position = Vector2(-74.5, 117)
 shape = SubResource("RectangleShape2D_1cuap")
 metadata/_edit_group_ = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CharacterBody2D"]
-libraries = {
-"": SubResource("AnimationLibrary_r8ns1")
-}
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
 sprite_frames = SubResource("SpriteFrames_1pq1f")
-animation = &"walk"
+animation = &"idle"
 speed_scale = 3.0
-
-[node name="AnimationTree" type="AnimationTree" parent="CharacterBody2D"]
