@@ -2,20 +2,23 @@ extends CharacterBody2D
 
 var speed
 
-var DEFAULT_SPEED = 300
-var SPRINT_SPEED = 600
+@export var DEFAULT_SPEED = 300
+@export var SPRINT_SPEED = 600
 
-var JUMP_HEIGHT = 50
-var JUMP_TIME = 1
-var JUMP_CD = 2
+var TOTAL_JUMPS = 2
+var current_jumps = 2
 
-var jump_velocity = (5 * JUMP_HEIGHT) / (JUMP_TIME * -1)
-var fall_gravity = (-5 * JUMP_HEIGHT) / (JUMP_TIME * JUMP_TIME * -1)
+@export var jump_height : float
+@export var jump_time_to_peak : float
+@export var jump_time_to_descent : float
+
+@onready var jump_velocity : float = ((2.0 * jump_height) / jump_time_to_peak) * -1.0
+@onready var jump_gravity : float = ((-2.0 * jump_height) / (jump_time_to_peak * jump_time_to_peak)) * -1.0
+@onready var fall_gravity : float = ((-2.0 * jump_height) / (jump_time_to_descent * jump_time_to_descent)) * -1.0
 
 var tfliph = false
 
 var jumping = false
-var jump_count
 
 func _physics_process(delta: float):
 	var left = Input.get_action_strength("Move_Left")
@@ -23,13 +26,14 @@ func _physics_process(delta: float):
 	
 	var sprint = Input.get_action_raw_strength("Sprint")
 	
-	var jump = Input.get_action_raw_strength("Jump")
+	velocity.y += get_gravity() * delta
 	
-	jumping = false
-	if jump == 1:
-		jumping = true
+	if is_on_floor():
+		current_jumps = TOTAL_JUMPS
 	
-	
+	var has_jumped = false
+	if Input.is_action_just_pressed("Jump"):
+		has_jumped = jump()
 	
 	if sprint == 1:
 		speed = SPRINT_SPEED
@@ -58,12 +62,25 @@ func _physics_process(delta: float):
 			$AnimatedSprite2D.play("walk")
 	
 	velocity.x = x_velocity
-	velocity.y += fall_gravity * delta
 	
-	if jumping:
-		velocity.y = jump_velocity
 	
 	move_and_slide()
+	
+func get_gravity() -> float:
+	return jump_gravity if velocity.y < 0.0 else fall_gravity
 
-
-var jumpCount = 0
+func jump() -> bool:
+	var jump = false
+	if current_jumps == TOTAL_JUMPS:
+		if is_on_floor():
+			velocity.y = jump_velocity
+			current_jumps -= 1
+			jump = true
+	else:
+		if current_jumps > 0:
+			velocity.y = jump_velocity
+			current_jumps -= 1
+			jump = true
+		else:
+			current_jumps = TOTAL_JUMPS	
+	return jump

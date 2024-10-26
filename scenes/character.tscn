@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=3 uid="uid://euud3x181ga7"]
+[gd_scene load_steps=42 format=3 uid="uid://h2sie1cnxydc"]
 
 [ext_resource type="Script" path="res://scenes/character_body_2d.gd" id="1_3smnr"]
 [ext_resource type="Texture2D" uid="uid://bhkkiqa4pygm" path="res://assets/Characters/Jack O' Lantern/Idle (1).png" id="1_6gdun"]
@@ -39,13 +39,6 @@
 [ext_resource type="Texture2D" uid="uid://c4qk1d18rn52p" path="res://assets/Characters/Jack O' Lantern/Walk (10).png" id="19_ju8um"]
 [ext_resource type="Texture2D" uid="uid://h4jgt4debifp" path="res://assets/Characters/Jack O' Lantern/Jump (9).png" id="20_iyy2b"]
 [ext_resource type="Texture2D" uid="uid://knkl8vx7xy7w" path="res://assets/Characters/Jack O' Lantern/Jump (10).png" id="21_kf627"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_wikbh"]
-radius = 263.0
-height = 526.0
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1cuap"]
-size = Vector2(333, 478)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1pq1f"]
 animations = [{
@@ -184,23 +177,28 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1njqu"]
+size = Vector2(446.154, 615.385)
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+[node name="CharacterBody2D" type="CharacterBody2D"]
 scale = Vector2(0.065, 0.065)
+collision_mask = 7
 script = ExtResource("1_3smnr")
+DEFAULT_SPEED = 200
+SPRINT_SPEED = 200
+jump_height = 50.0
+jump_time_to_peak = 0.25
+jump_time_to_descent = 0.25
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-12, -102)
-shape = SubResource("CapsuleShape2D_wikbh")
-metadata/_edit_group_ = true
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
-position = Vector2(-74.5, 117)
-shape = SubResource("RectangleShape2D_1cuap")
-metadata/_edit_group_ = true
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_1pq1f")
-animation = &"idle"
+animation = &"jump"
+frame_progress = 0.100839
 speed_scale = 3.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-23.0769, 46.1539)
+shape = SubResource("RectangleShape2D_1njqu")
+metadata/_edit_group_ = true
+
+[node name="Timer" type="Timer" parent="."]
