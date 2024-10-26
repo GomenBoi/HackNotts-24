@@ -2,8 +2,8 @@ extends CharacterBody2D
 
 var speed
 
-@export var DEFAULT_SPEED = 300
-@export var SPRINT_SPEED = 600
+@export var DEFAULT_SPEED : int
+@export var SPRINT_SPEED : int
 
 var TOTAL_JUMPS = 2
 var current_jumps = 2
@@ -26,7 +26,7 @@ func _physics_process(delta: float):
 	
 	var sprint = Input.get_action_raw_strength("Sprint")
 	
-	velocity.y += get_gravity() * delta
+	velocity.y += get_gravity2() * delta
 	
 	if is_on_floor():
 		current_jumps = TOTAL_JUMPS
@@ -63,24 +63,22 @@ func _physics_process(delta: float):
 	
 	velocity.x = x_velocity
 	
-	
 	move_and_slide()
 	
-func get_gravity() -> float:
+func get_gravity2() -> float:
 	return jump_gravity if velocity.y < 0.0 else fall_gravity
 
 func jump() -> bool:
-	var jump = false
 	if current_jumps == TOTAL_JUMPS:
 		if is_on_floor():
 			velocity.y = jump_velocity
 			current_jumps -= 1
-			jump = true
+			return false
 	else:
 		if current_jumps > 0:
 			velocity.y = jump_velocity
 			current_jumps -= 1
-			jump = true
+			return false
 		else:
 			current_jumps = TOTAL_JUMPS	
-	return jump
+	return true
