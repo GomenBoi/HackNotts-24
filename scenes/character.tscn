@@ -1,7 +1,7 @@
 [gd_scene load_steps=42 format=3 uid="uid://h2sie1cnxydc"]
 
-[ext_resource type="Script" path="res://scenes/character_body_2d.gd" id="1_3smnr"]
 [ext_resource type="Texture2D" uid="uid://bhkkiqa4pygm" path="res://assets/Characters/Jack O' Lantern/Idle (1).png" id="1_6gdun"]
+[ext_resource type="Script" path="res://scenes/char_attack.gd" id="1_khncp"]
 [ext_resource type="Texture2D" uid="uid://dp2oxss0wf2l8" path="res://assets/Characters/Jack O' Lantern/Run (1).png" id="2_gg4kk"]
 [ext_resource type="Texture2D" uid="uid://b5wfln3j06eet" path="res://assets/Characters/Jack O' Lantern/Run (2).png" id="3_4pig5"]
 [ext_resource type="Texture2D" uid="uid://cl2vcluk6fedi" path="res://assets/Characters/Jack O' Lantern/Idle (2).png" id="3_6xa62"]
@@ -178,17 +178,13 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1njqu"]
-size = Vector2(446.154, 615.385)
+size = Vector2(438.462, 615.385)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(8, 1)
 scale = Vector2(0.065, 0.065)
 collision_mask = 7
-script = ExtResource("1_3smnr")
-DEFAULT_SPEED = 200
-SPRINT_SPEED = 200
-jump_height = 50.0
-jump_time_to_peak = 0.25
-jump_time_to_descent = 0.25
+script = ExtResource("1_khncp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_1pq1f")
@@ -197,7 +193,7 @@ frame_progress = 0.100839
 speed_scale = 3.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-23.0769, 46.1539)
+position = Vector2(19.2308, 46.1539)
 shape = SubResource("RectangleShape2D_1njqu")
 metadata/_edit_group_ = true
 
