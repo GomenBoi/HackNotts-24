@@ -1,6 +1,45 @@
-[gd_scene load_steps=7 format=3 uid="uid://c5olpbbn4d06k"]
+[gd_scene load_steps=49 format=3 uid="uid://c5olpbbn4d06k"]
 
 [ext_resource type="Texture2D" uid="uid://dceb5l101mlw5" path="res://assets/platformertiles.png" id="1_rtb2k"]
+[ext_resource type="Script" path="res://scenes/character_body_2d.gd" id="2_17x8l"]
+[ext_resource type="Texture2D" uid="uid://bhkkiqa4pygm" path="res://assets/Characters/Jack O' Lantern/Idle (1).png" id="3_nyjk3"]
+[ext_resource type="Texture2D" uid="uid://cl2vcluk6fedi" path="res://assets/Characters/Jack O' Lantern/Idle (2).png" id="4_vmik1"]
+[ext_resource type="Texture2D" uid="uid://vp6gcwv4yiql" path="res://assets/Characters/Jack O' Lantern/Idle (3).png" id="5_bwl02"]
+[ext_resource type="Texture2D" uid="uid://sqtqd6jy0vbp" path="res://assets/Characters/Jack O' Lantern/Idle (4).png" id="6_17bhh"]
+[ext_resource type="Texture2D" uid="uid://cc8f0pif35dl4" path="res://assets/Characters/Jack O' Lantern/Idle (5).png" id="7_nqgvu"]
+[ext_resource type="Texture2D" uid="uid://d0gu1pa86y5cg" path="res://assets/Characters/Jack O' Lantern/Idle (6).png" id="8_foni5"]
+[ext_resource type="Texture2D" uid="uid://c6oykqfhvcb2e" path="res://assets/Characters/Jack O' Lantern/Idle (7).png" id="9_njnt8"]
+[ext_resource type="Texture2D" uid="uid://kjdoehkqymsm" path="res://assets/Characters/Jack O' Lantern/Idle (8).png" id="10_uiwl7"]
+[ext_resource type="Texture2D" uid="uid://cck1h4t3cwut3" path="res://assets/Characters/Jack O' Lantern/Idle (9).png" id="11_jaoqr"]
+[ext_resource type="Texture2D" uid="uid://bkdql00ij2qk0" path="res://assets/Characters/Jack O' Lantern/Idle (10).png" id="12_6w1xg"]
+[ext_resource type="Texture2D" uid="uid://c1dioklw3fqp3" path="res://assets/Characters/Jack O' Lantern/Jump (1).png" id="13_y7yrc"]
+[ext_resource type="Texture2D" uid="uid://cuvluki57653m" path="res://assets/Characters/Jack O' Lantern/Jump (2).png" id="14_3og6o"]
+[ext_resource type="Texture2D" uid="uid://bih3dj46iunls" path="res://assets/Characters/Jack O' Lantern/Jump (3).png" id="15_8wh3w"]
+[ext_resource type="Texture2D" uid="uid://djad0bocqb1xm" path="res://assets/Characters/Jack O' Lantern/Jump (4).png" id="16_gma82"]
+[ext_resource type="Texture2D" uid="uid://c1ojanpf47vrc" path="res://assets/Characters/Jack O' Lantern/Jump (5).png" id="17_v6xsn"]
+[ext_resource type="Texture2D" uid="uid://ctd71ahgjbwur" path="res://assets/Characters/Jack O' Lantern/Jump (6).png" id="18_bxc26"]
+[ext_resource type="Texture2D" uid="uid://cw5x3smdd306u" path="res://assets/Characters/Jack O' Lantern/Jump (7).png" id="19_eamrr"]
+[ext_resource type="Texture2D" uid="uid://d113way16vk3a" path="res://assets/Characters/Jack O' Lantern/Jump (8).png" id="20_ivpfb"]
+[ext_resource type="Texture2D" uid="uid://h4jgt4debifp" path="res://assets/Characters/Jack O' Lantern/Jump (9).png" id="21_visp4"]
+[ext_resource type="Texture2D" uid="uid://knkl8vx7xy7w" path="res://assets/Characters/Jack O' Lantern/Jump (10).png" id="22_mdb4i"]
+[ext_resource type="Texture2D" uid="uid://dp2oxss0wf2l8" path="res://assets/Characters/Jack O' Lantern/Run (1).png" id="23_e0nuc"]
+[ext_resource type="Texture2D" uid="uid://b5wfln3j06eet" path="res://assets/Characters/Jack O' Lantern/Run (2).png" id="24_vg1yu"]
+[ext_resource type="Texture2D" uid="uid://bjby4pyl6r3cp" path="res://assets/Characters/Jack O' Lantern/Run (3).png" id="25_hlewp"]
+[ext_resource type="Texture2D" uid="uid://nadlb86wjv47" path="res://assets/Characters/Jack O' Lantern/Run (4).png" id="26_182fn"]
+[ext_resource type="Texture2D" uid="uid://bpa1nw48sytx8" path="res://assets/Characters/Jack O' Lantern/Run (5).png" id="27_bes8v"]
+[ext_resource type="Texture2D" uid="uid://duv5xoo588p7h" path="res://assets/Characters/Jack O' Lantern/Run (6).png" id="28_5wkrp"]
+[ext_resource type="Texture2D" uid="uid://dr2fbcke01oo4" path="res://assets/Characters/Jack O' Lantern/Run (7).png" id="29_0aeh8"]
+[ext_resource type="Texture2D" uid="uid://cgif5xkub56dl" path="res://assets/Characters/Jack O' Lantern/Run (8).png" id="30_bydgp"]
+[ext_resource type="Texture2D" uid="uid://c5c2ok2dpyfql" path="res://assets/Characters/Jack O' Lantern/Walk (1).png" id="31_q5ejc"]
+[ext_resource type="Texture2D" uid="uid://ck4e22c3pi6xs" path="res://assets/Characters/Jack O' Lantern/Walk (2).png" id="32_ayfdt"]
+[ext_resource type="Texture2D" uid="uid://d24obgjna5k6a" path="res://assets/Characters/Jack O' Lantern/Walk (3).png" id="33_evtny"]
+[ext_resource type="Texture2D" uid="uid://ce4x116urb5oe" path="res://assets/Characters/Jack O' Lantern/Walk (4).png" id="34_eqgoe"]
+[ext_resource type="Texture2D" uid="uid://mcnwhnvh5g2g" path="res://assets/Characters/Jack O' Lantern/Walk (5).png" id="35_nybg2"]
+[ext_resource type="Texture2D" uid="uid://bb5nh0oktomwf" path="res://assets/Characters/Jack O' Lantern/Walk (6).png" id="36_lnmbf"]
+[ext_resource type="Texture2D" uid="uid://dojmitd27dw34" path="res://assets/Characters/Jack O' Lantern/Walk (7).png" id="37_vbqrv"]
+[ext_resource type="Texture2D" uid="uid://du1mh2xurx42q" path="res://assets/Characters/Jack O' Lantern/Walk (8).png" id="38_x2wth"]
+[ext_resource type="Texture2D" uid="uid://dktj8oy2kcg0r" path="res://assets/Characters/Jack O' Lantern/Walk (9).png" id="39_krc4a"]
+[ext_resource type="Texture2D" uid="uid://c4qk1d18rn52p" path="res://assets/Characters/Jack O' Lantern/Walk (10).png" id="40_5he4t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ejjqi"]
 texture = ExtResource("1_rtb2k")
@@ -208,7 +247,152 @@ texture = ExtResource("1_rtb2k")
 sources/0 = SubResource("TileSetAtlasSource_4odpo")
 pattern_0 = SubResource("TileMapPattern_htknn")
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_moiqp"]
+radius = 263.0
+height = 526.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_18va4"]
+size = Vector2(333, 478)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5n7u6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_nyjk3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_vmik1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_bwl02")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_17bhh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nqgvu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_foni5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_njnt8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_uiwl7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jaoqr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_6w1xg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_y7yrc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_3og6o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_8wh3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_gma82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_v6xsn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_bxc26")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_eamrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ivpfb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_visp4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_mdb4i")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_e0nuc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_vg1yu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_hlewp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_182fn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_bes8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_5wkrp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_0aeh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_bydgp")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("31_q5ejc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_ayfdt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_evtny")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_eqgoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_nybg2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_lnmbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_vbqrv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_x2wth")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_krc4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_5he4t")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
 [node name="Root" type="Node2D"]
+texture_filter = 1
 
 [node name="Background" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_jn3xu")
@@ -219,3 +403,25 @@ layer_0/tile_data = PackedInt32Array(1376270, 393216, 2, 1376271, 393216, 2, 144
 tile_set = SubResource("TileSet_jdqco")
 format = 2
 layer_0/tile_data = PackedInt32Array(131075, 458752, 0, 131074, 393216, 0, 196610, 393216, 1, 196611, 458752, 1, 1900544, 65536, 0, 1900545, 131072, 0, 1900546, 196608, 0, 1900547, 262144, 0, 1900548, 65536, 0, 1900549, 131072, 0, 1900550, 196608, 0, 1900551, 262144, 0, 1900552, 65536, 0, 1900553, 131072, 0, 1900554, 196608, 0, 1900555, 262144, 0, 1900556, 65536, 0, 1900557, 131072, 0, 1900558, 196608, 0, 1900559, 262144, 0, 1900560, 65536, 0, 1900561, 131072, 0, 1900562, 196608, 0, 1900563, 262144, 0, 1900564, 65536, 0, 1900565, 131072, 0, 1900566, 196608, 0, 1900567, 262144, 0, 1900568, 65536, 0, 1900569, 131072, 0, 1900570, 196608, 0, 1900571, 262144, 0, 1900572, 65536, 0, 1900573, 131072, 0, 1900574, 196608, 0, 1900575, 262144, 0, 1900576, 65536, 0, 1900577, 131072, 0, 1900578, 196608, 0, 1900579, 262144, 0, 1900580, 65536, 0, 1900581, 131072, 0, 1900582, 196608, 0, 1900583, 262144, 0, 1507330, 0, 0, 1572866, 0, 2, 1638402, 0, 5, 1507331, 65536, 0, 1572867, 65536, 2, 1638403, 65536, 5, 1507332, 131072, 0, 1572868, 131072, 2, 1638404, 131072, 5, 1507333, 196608, 0, 1572869, 131072, 2, 1638405, 196608, 5, 1507334, 262144, 0, 1572870, 262144, 2, 1638406, 262144, 5, 1507335, 327680, 0, 1572871, 327680, 2, 1638407, 327680, 5, 1310732, 0, 0, 1376268, 0, 2, 1441804, 0, 5, 1310733, 65536, 0, 1376269, 65536, 2, 1441805, 65536, 5, 1310734, 131072, 0, 1376270, 131072, 2, 1441806, 131072, 5, 1310735, 196608, 0, 1376271, 131072, 2, 1441807, 196608, 5, 1310736, 262144, 0, 1376272, 262144, 2, 1441808, 262144, 5, 1310737, 327680, 0, 1376273, 327680, 2, 1441809, 327680, 5, 1376287, 0, 0, 1441823, 0, 2, 1507359, 0, 5, 1376288, 65536, 0, 1441824, 65536, 2, 1507360, 65536, 5, 1376289, 131072, 0, 1441825, 131072, 2, 1507361, 131072, 5, 1376290, 196608, 0, 1441826, 131072, 2, 1507362, 196608, 5, 1376291, 262144, 0, 1441827, 262144, 2, 1507363, 262144, 5, 1376292, 327680, 0, 1441828, 327680, 2, 1507364, 327680, 5, 983063, 0, 0, 1048599, 0, 2, 1114135, 0, 5, 983064, 65536, 0, 1048600, 65536, 2, 1114136, 65536, 5, 983065, 131072, 0, 1048601, 131072, 2, 1114137, 131072, 5, 983066, 196608, 0, 1048602, 131072, 2, 1114138, 196608, 5, 983067, 262144, 0, 1048603, 262144, 2, 1114139, 262144, 5, 983068, 327680, 0, 1048604, 327680, 2, 1114140, 327680, 5, 983043, 0, 0, 1048579, 0, 2, 1114115, 0, 5, 983044, 65536, 0, 1048580, 65536, 2, 1114116, 65536, 5, 983045, 131072, 0, 1048581, 131072, 2, 1114117, 131072, 5, 983046, 196608, 0, 1048582, 131072, 2, 1114118, 196608, 5, 983047, 262144, 0, 1048583, 262144, 2, 1114119, 262144, 5, 983048, 327680, 0, 1048584, 327680, 2, 1114120, 327680, 5, 655373, 0, 0, 720909, 0, 2, 786445, 0, 5, 655374, 65536, 0, 720910, 65536, 2, 786446, 65536, 5, 655375, 131072, 0, 720911, 131072, 2, 786447, 131072, 5, 655376, 196608, 0, 720912, 131072, 2, 786448, 196608, 5, 655377, 262144, 0, 720913, 262144, 2, 786449, 262144, 5, 655378, 327680, 0, 720914, 327680, 2, 786450, 327680, 5, 589855, 0, 0, 655391, 0, 2, 720927, 0, 5, 589856, 65536, 0, 655392, 65536, 2, 720928, 65536, 5, 589857, 131072, 0, 655393, 131072, 2, 720929, 131072, 5, 589858, 196608, 0, 655394, 131072, 2, 720930, 196608, 5, 589859, 262144, 0, 655395, 262144, 2, 720931, 262144, 5, 589860, 327680, 0, 655396, 327680, 2, 720932, 327680, 5, 458755, 0, 0, 524291, 0, 2, 589827, 0, 5, 458756, 65536, 0, 524292, 65536, 2, 589828, 65536, 5, 458757, 131072, 0, 524293, 131072, 2, 589829, 131072, 5, 458758, 196608, 0, 524294, 131072, 2, 589830, 196608, 5, 458759, 262144, 0, 524295, 262144, 2, 589831, 262144, 5, 458760, 327680, 0, 524296, 327680, 2, 589832, 327680, 5, 262165, 0, 0, 327701, 0, 2, 393237, 0, 5, 262166, 65536, 0, 327702, 65536, 2, 393238, 65536, 5, 262167, 131072, 0, 327703, 131072, 2, 393239, 131072, 5, 262168, 196608, 0, 327704, 131072, 2, 393240, 196608, 5, 262169, 262144, 0, 327705, 262144, 2, 393241, 262144, 5, 262170, 327680, 0, 327706, 327680, 2, 393242, 327680, 5)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(95, 440)
+scale = Vector2(0.065, 0.065)
+collision_mask = 3
+script = ExtResource("2_17x8l")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-12, -102)
+shape = SubResource("CapsuleShape2D_moiqp")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="CharacterBody2D"]
+position = Vector2(-74.5, 117)
+shape = SubResource("RectangleShape2D_18va4")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D"]
+sprite_frames = SubResource("SpriteFrames_5n7u6")
+animation = &"idle"
+speed_scale = 3.0
