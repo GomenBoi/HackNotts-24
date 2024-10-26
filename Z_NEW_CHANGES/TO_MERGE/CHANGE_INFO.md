@@ -11,7 +11,7 @@
 	(FOR REFERENCES DURING MANUAL MERGE)
 	
 > ### DEPENDENCIES SHOULD BE SPECIFIED
-	(EX: [sprite] uses (asset), [script] uses [script import])
+	(EX: [sprite] uses (asset), [script] uses [import])
 	(!! THIS IS IMPORTANT AS THEY REQUIRE TO BE UPDATED
 		DURING MANUAL MERGE, WHEN BEING SORTED INTO FOLDERS)
 
