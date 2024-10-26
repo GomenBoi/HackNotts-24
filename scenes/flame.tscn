@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://ctnlvn1pgryrm"]
 
-[ext_resource type="Texture2D" uid="uid://df1embuwhwjni" path="res://assets/Attack/flame_rinse.png" id="1_hibm7"]
+[ext_resource type="Texture2D" uid="uid://dfrubkf4pjgeq" path="res://assets/Attack/flame_rinse.png" id="1_hibm7"]
 [ext_resource type="Script" path="res://scripts/flame_movement.gd" id="2_jqjx5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_5trhy"]

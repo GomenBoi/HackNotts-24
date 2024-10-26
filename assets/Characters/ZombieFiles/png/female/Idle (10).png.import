@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dfrubkf4pjgeq"
-path="res://.godot/imported/flame_rinse.png-1f6d2b78246ddb0ed33610bd1152c335.ctex"
+uid="uid://65ltgqo6w5ga"
+path="res://.godot/imported/Idle (10).png-15f842f1a94dd31e3dadac7c799e3a9b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Attack/flame_rinse.png"
-dest_files=["res://.godot/imported/flame_rinse.png-1f6d2b78246ddb0ed33610bd1152c335.ctex"]
+source_file="res://assets/Characters/ZombieFiles/png/female/Idle (10).png"
+dest_files=["res://.godot/imported/Idle (10).png-15f842f1a94dd31e3dadac7c799e3a9b.ctex"]
 
 [params]
 
