@@ -1,0 +1,14 @@
+{
+	"enemies": [
+		{
+			"id": 1,
+			"name": "spirit",
+			"health": 100,
+			"damage": 10,
+			"movable": "false",
+			"droppables": [
+				
+			],
+		}
+	]
+}
