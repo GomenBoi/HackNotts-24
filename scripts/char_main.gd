@@ -109,4 +109,4 @@ func _on_attack_cd_timeout() -> void:
 	onAttackCD = false
 	
 func on_hit(projectile: FireProjectile) -> void:
-	get_tree().reload_current_scene()
+	get_tree().call_deferred("reload_current_scene")
