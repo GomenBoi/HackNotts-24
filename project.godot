@@ -26,6 +26,10 @@ window/size/viewport_width=640
 window/size/viewport_height=480
 window/stretch/mode="viewport"
 
+[global_group]
+
+projectile_collidable=""
+
 [input]
 
 Move_Left={
@@ -64,7 +68,7 @@ Attack={
 2d_physics/layer_1="character"
 2d_physics/layer_2="level map"
 2d_physics/layer_3="boundary map"
-2d_physics/layer_4="one-way platform"
+2d_physics/layer_4="projectiles"
 
 [rendering]
 
