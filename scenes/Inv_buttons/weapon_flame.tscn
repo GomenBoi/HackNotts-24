@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkpqo68gjr1gq"]
+
+[ext_resource type="Texture2D" uid="uid://dfrubkf4pjgeq" path="res://assets/Attack/flame_rinse.png" id="1_yc0th"]
+
+[node name="TextureButton" type="TextureButton"]
+clip_contents = true
+custom_minimum_size = Vector2(16, 16)
+anchors_preset = -1
+anchor_right = 0.156
+anchor_bottom = 0.208
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 1.16
+offset_bottom = 1.16
+scale = Vector2(0.1, 0.1)
+texture_normal = ExtResource("1_yc0th")
+texture_pressed = ExtResource("1_yc0th")
+texture_hover = ExtResource("1_yc0th")
+texture_disabled = ExtResource("1_yc0th")
+texture_focused = ExtResource("1_yc0th")
+ignore_texture_size = true
+stretch_mode = 4

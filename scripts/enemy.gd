@@ -2,7 +2,7 @@ extends Area2D
 
 @onready var projectile_timer = $Timer
 @onready var projectile_scene = preload("res://scenes/fire_projectile.tscn")
-@onready var root : Node2D = get_tree().get_root().get_child(1)
+@onready var root : Node = get_tree().get_root().get_child(2)
 @onready var Player : CharacterBody2D = root.get_node("CharacterBody2D")
 
 func _ready() -> void:
@@ -10,6 +10,7 @@ func _ready() -> void:
 	$AnimatedSprite2D.play("idle")
 	projectile_timer.connect("timeout", on_timeout)
 	projectile_timer.start()
+
 	
 func on_timeout() -> void:
 	var instance : FireProjectile = projectile_scene.instantiate()
@@ -20,6 +21,4 @@ func on_timeout() -> void:
 	instance.initial_direction = dir
 	
 	root.call_deferred("add_child", instance)
-	
-	
 	

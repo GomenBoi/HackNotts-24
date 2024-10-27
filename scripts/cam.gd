@@ -1,6 +1,6 @@
 extends Camera2D
 
-@onready var root : Node2D = get_tree().get_root().get_child(1)
+@onready var root : Node = get_tree().get_root().get_child(2)
 @onready var Player : CharacterBody2D = root.get_node("CharacterBody2D")
 
 func _process(delta: float) -> void:

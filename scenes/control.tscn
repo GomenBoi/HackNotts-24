@@ -6,7 +6,7 @@
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="heartGUI" parent="." instance=ExtResource("1_6lxwy")]
+[node name="heartGUI1" parent="." instance=ExtResource("1_6lxwy")]
 layout_mode = 2
 
 [node name="heartGUI2" parent="." instance=ExtResource("1_6lxwy")]

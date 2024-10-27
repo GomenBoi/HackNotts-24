@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://cgejkehdxofx3"]
+
+[ext_resource type="Texture2D" uid="uid://cgfpyffdi16ef" path="res://assets/GUI/360_F_542007484_inHMf0OSnSiH8sM8SyYbypQzcrP41i8s-removebg-preview.png" id="1_xailx"]
+[ext_resource type="Script" path="res://scripts/inventory_main.gd" id="1_xwvnt"]
+[ext_resource type="PackedScene" uid="uid://nx1rylbvg4ji" path="res://scenes/Inv_buttons/tool_info.tscn" id="2_r5511"]
+[ext_resource type="PackedScene" uid="uid://nbcghue8n5ka" path="res://scenes/Inv_buttons/weapon_sword.tscn" id="3_oku8o"]
+[ext_resource type="PackedScene" uid="uid://bkpqo68gjr1gq" path="res://scenes/Inv_buttons/weapon_flame.tscn" id="4_suwxb"]
+
+[node name="Control" type="Control"]
+visible = false
+z_index = 10
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_xwvnt")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ToolInfo" parent="CanvasLayer" instance=ExtResource("2_r5511")]
+z_index = 15
+anchors_preset = -1
+anchor_right = 0.225
+anchor_bottom = 0.3
+offset_left = -4.0
+offset_top = -3.0
+offset_right = -4.0
+offset_bottom = -3.0
+script = null
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer"]
+offset_left = 20.0
+offset_top = 58.0
+offset_right = 625.0
+offset_bottom = 418.0
+metadata/_edit_group_ = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/MarginContainer"]
+visible = false
+layout_mode = 2
+texture = ExtResource("1_xailx")
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/MarginContainer/TextureRect"]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 73.0
+offset_right = 524.0
+offset_bottom = 298.0
+scale = Vector2(2.9, 2.9)
+columns = 8
+
+[node name="InvButtons" parent="CanvasLayer/MarginContainer/TextureRect/GridContainer" instance=ExtResource("3_oku8o")]
+z_index = 12
+layout_mode = 2
+
+[node name="TextureButton" parent="CanvasLayer/MarginContainer/TextureRect/GridContainer" instance=ExtResource("4_suwxb")]
+layout_mode = 2
+stretch_mode = 5
