@@ -22,8 +22,8 @@ var jumping = false
 var onAttackCD = false
 
 @onready var main = get_tree().get_root().get_child(0)
-#@onready var projectile = preload("res://scenes/flame.tscn")
-@onready var projectile = preload("res://scenes/sword.tscn")
+@onready var projectile = preload("res://scenes/flame.tscn")
+#@onready var projectile = preload("res://scenes/sword.tscn")
 
 func _physics_process(delta: float):
 	var left = Input.get_action_strength("Move_Left")
@@ -107,3 +107,6 @@ func shoot():
 
 func _on_attack_cd_timeout() -> void:
 	onAttackCD = false
+	
+func on_hit(projectile: FireProjectile) -> void:
+	get_tree().reload_current_scene()

@@ -7,7 +7,9 @@
 			"rotation": 0,
 			"lifetime": 1,
 			"damage": 10,
+			"attackcd": 1,
 			"rarity": "Common",
+			"description": "BURNNNNN",
 			"droppable": "false",
 		},
 		{
@@ -17,7 +19,9 @@
 			"rotation": 0.3,
 			"lifetime": 0.5,
 			"damage": 10,
+			"attackcd": 1,
 			"rarity": "uncommon",
+			"description": "SPINNNNNN",
 			"droppable": "true",
 		},
 	]
