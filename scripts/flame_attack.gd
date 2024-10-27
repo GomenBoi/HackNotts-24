@@ -31,12 +31,10 @@ func _physics_process(delta: float) -> void:
 		
 	move_and_slide()
 
-func _on_area_2d_body_entered(body):
-	print("HIT!")
-	# Hit handler function here
-	queue_free()
-	
-
 func _on_life_time_timeout() -> void:
 	queue_free()
 	
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	print(body)

@@ -142,8 +142,8 @@ animations = [{
 size = Vector2(144, 256)
 
 [node name="Area2D" type="Area2D"]
-collision_layer = 0
-collision_mask = 0
+collision_layer = 63
+collision_mask = 16
 script = ExtResource("1_78kwj")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -152,8 +152,9 @@ sprite_frames = SubResource("SpriteFrames_pkovo")
 animation = &"idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 scale = Vector2(0.25, 0.25)
 shape = SubResource("RectangleShape2D_afvhl")
 
 [node name="Timer" type="Timer" parent="."]
+
+[connection signal="body_entered" from="." to="." method="on_body_entered"]

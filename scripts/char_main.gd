@@ -102,14 +102,13 @@ func jump() -> bool:
 	return true
 
 func shoot():
-	var instance = projectile.instantiate()
-	var charBody = instance.get_node("CharacterBody2D")
+	var charBody = projectile.instantiate()
 	charBody.direction = rotation
 	charBody.spawnPos = global_position
 	charBody.spawnRot = rotation
 	charBody.zdex = z_index - 1
 	charBody.fliph = tfliph
-	main.call_deferred("add_child", instance)
+	main.call_deferred("add_child", charBody)
 	onAttackCD = true
 	$AttackCD.start()
 
@@ -117,4 +116,4 @@ func _on_attack_cd_timeout() -> void:
 	onAttackCD = false
 	
 func on_hit(projectile: FireProjectile) -> void:
-	get_tree().call_deferred("reload_current_scene")
+	position = Vector2(343, 351)

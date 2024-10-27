@@ -9,5 +9,7 @@ func _process(delta: float) -> void:
 		offset.y = 240
 	elif current_player_y < 0 && current_player_y > -240:
 		offset.y = 0
-	elif current_player_y < -240:
+	elif current_player_y < -240 && current_player_y > -480:
 		offset.y = -240
+	elif current_player_y < -480 && current_player_y > -720:
+		offset.y = -720
