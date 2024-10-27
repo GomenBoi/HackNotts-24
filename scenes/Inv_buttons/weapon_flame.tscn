@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bkpqo68gjr1gq"]
+[gd_scene load_steps=3 format=3 uid="uid://bkpqo68gjr1gq"]
 
 [ext_resource type="Texture2D" uid="uid://dfrubkf4pjgeq" path="res://assets/Attack/flame_rinse.png" id="1_yc0th"]
+[ext_resource type="Script" path="res://scripts/weapon_flame.gd" id="2_0xdvw"]
 
 [node name="TextureButton" type="TextureButton"]
 clip_contents = true
@@ -20,3 +21,4 @@ texture_disabled = ExtResource("1_yc0th")
 texture_focused = ExtResource("1_yc0th")
 ignore_texture_size = true
 stretch_mode = 4
+script = ExtResource("2_0xdvw")
