@@ -10,6 +10,7 @@ func _ready() -> void:
 	$AnimatedSprite2D.play("idle")
 	projectile_timer.connect("timeout", on_timeout)
 	projectile_timer.start()
+
 	
 func on_timeout() -> void:
 	var instance : FireProjectile = projectile_scene.instantiate()
@@ -20,3 +21,4 @@ func on_timeout() -> void:
 	instance.initial_direction = dir
 	
 	root.call_deferred("add_child", instance)
+	
