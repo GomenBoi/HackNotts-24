@@ -22,10 +22,18 @@ var jumping = false
 var onAttackCD = false
 
 @onready var main = get_tree().get_root().get_child(0)
-@onready var projectile = preload("res://scenes/flame.tscn")
-#@onready var projectile = preload("res://scenes/sword.tscn")
+@onready var projectile_flame = preload("res://scenes/flame.tscn")
+@onready var projectile_sword = preload("res://scenes/sword.tscn")
+
+var projectile
 
 func _physics_process(delta: float):
+	var selectedWeapon = GlobalSignals.getPlayerWeapon()
+	if selectedWeapon == "flame":
+		projectile = projectile_flame
+	else:
+		projectile = projectile_sword
+	
 	var left = Input.get_action_strength("Move_Left")
 	var right = Input.get_action_strength("Move_Right")
 	

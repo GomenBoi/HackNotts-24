@@ -10,3 +10,14 @@ func emit_showInfo(name: String) -> void:
 func emit_hideInfo() -> void:
 	print("Emitting hideInfo")
 	emit_signal("hideInfo")
+
+
+var currentWeapon = "flame"
+func getPlayerWeapon():
+	return currentWeapon
+	
+func setNewPlayerWeapon(weapon : String):
+	if weapon == "flame" or weapon == "sword":
+		currentWeapon = weapon
+		
+		
