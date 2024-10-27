@@ -20,4 +20,23 @@ func setNewPlayerWeapon(weapon : String):
 	if weapon == "flame" or weapon == "sword":
 		currentWeapon = weapon
 		
+var playersWeapons = []	
+@onready var inventory = get_node("res://scenes/inventory.tscn")
+var swordBTN = preload("res://scenes/Inv_buttons/weapon_sword.tscn")
+var flameBTN = preload("res://scenes/Inv_buttons/weapon_flame.tscn")
+func awardWeapon(weapon : String):
+	var hasWeapon = false
+	for i in playersWeapons:
+		if i == weapon: 
+			hasWeapon = true
+			break
+	if !hasWeapon:
+		playersWeapons.append(weapon)
 		
+		var newBTN
+		if(weapon) == "sword":
+			newBTN = swordBTN.instantiate()
+		else:
+			newBTN = flameBTN.instantiate()
+			
+		inventory.call_deferred("add_child", newBTN)
